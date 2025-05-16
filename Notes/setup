@@ -1,0 +1,86 @@
+# React
+- open source
+- JS library
+- front end
+- Introducted by FB(Meta)
+- install differnt package (Redux, React Router ...)
+
+# why react
+- easy to learn
+- flexibility 
+- market demand and rich community
+
+# pre requisite
+- HTML
+- JS : https://github.com/techramj/Angular_15apr/tree/main/js
+- CSS
+
+# refrence
+- https://react.dev/
+
+# set up.
+- node.js https://nodejs.org/en/download
+```
+node -v
+npm -v
+npx -v
+```
+- vs code
+extension 
+```
+auto import => install
+ES7 React/Redux/GraphQL/React-Native snippets => install
+intellicode
+Material icon theme
+
+setting -> emmet include language
+add
+item => javascript
+value => javascriptreact
+
+```
+
+# how to start react project
+- manually (not recommender atleast for the beginners)
+- different packages tools.
+
+## create react app
+```
+npm install -g create-react-app
+
+npx create-react-app <project_name>
+npx create-react-app demo1
+cd demo1
+npm start
+```
+
+Error faced
+```
+npm install ajv --save-dev
+
+```
+
+## set react app
+```
+npx set-react-app <project_name> 
+npx set-react-app demo2
+cd demo2
+npm start
+
+``` 
+
+## vite
+```
+npm install vite --save-dev
+
+npm create vite@latest <project_name>
+npm create vite@latest demo3
+select the framework => React
+select a variant => javascript
+cd demo3
+npm run dev
+```
+
+## next.js 
+- not recommened for the beginers
+
