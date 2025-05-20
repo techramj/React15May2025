@@ -1,22 +1,12 @@
+import TODO from '../assets/images/todo.jpeg';
+import '../App.css';
 
-export const Header  = function(){
-    return(
-        <>
-            <h1>Header</h1>
-            <br></br>
-        </> 
-    );
+
+export default function Header() {
+  return (
+    <div>
+      <img src={TODO} alt="logo" className='a'/>
+    </div>
+  )
 }
 
-
-
-/*
-function Header(){
-
-}
-
-const Header = () =>{
-    
-}
-
-*/
