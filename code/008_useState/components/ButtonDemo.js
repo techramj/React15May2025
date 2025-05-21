@@ -14,19 +14,19 @@ export default function ButtonDemo() {
    function decrement(){
     count--;
     setCnt(cnt-1);
-    //console.log('decrement the count',count);
+    console.log('decrement the count',count);
    }
 
    function reset(){
     count = 0;
     setCnt(0);
-    //console.log('reset the count',count);   
+    console.log('reset the count',count);   
    }
 
    function incremnetBy2(){
     setCnt(x => x +1);
     setCnt(x => x+1);
-    //console.log('increment the count by 2');
+    console.log('increment the count by 2');
    }
   return (
     <div className='box'>

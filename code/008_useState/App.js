@@ -1,15 +1,14 @@
-
+import ButtonDemo from "./components/ButtonDemo";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import TaskList from "./components/TaskList";
 
 
 function App() {
   return (
     <>
       <Header/>
-      <div>
-        <TaskList/>
+      <div className="App">
+        <ButtonDemo/>
       </div>
       <Footer/>
     </>

@@ -1,0 +1,8 @@
+# create one component ButtonDemo with 5 button
+increment
+decrement
+reset
+increment by 2
+decrement by 2
+
+create the function for each button and  call the function
