@@ -10,8 +10,6 @@ const TaskList = () => {
         {id:103, name:'Java', status:'completed'},
     ]);
 
-    const [show, setShow] = useState(false);
-
     const handleDelete = (id) => {
         const newTasks = tasks.filter((task) => task.id !== id);
         setTasks(newTasks);
@@ -25,9 +23,8 @@ const TaskList = () => {
     <div className='box'>
       <h1>Task List</h1>
       <ul>
-        <button className='toggle' onClick={()=>setShow(!show)}>{show?'Hide':'Show'}</button>
         {
-            show && tasks.map((task)=> (
+            tasks.map((task)=> (
                <Task task={task}  handleDelete={handleDelete} a={a} />
             ))
         }

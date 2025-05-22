@@ -18,6 +18,10 @@ const TaskList = () => {
         console.log('deleted task', id);
       
     }
+
+    const handleToggle = () => {
+      setShow(!show);
+    }
     
     let a = 10;
 
@@ -25,7 +29,7 @@ const TaskList = () => {
     <div className='box'>
       <h1>Task List</h1>
       <ul>
-        <button className='toggle' onClick={()=>setShow(!show)}>{show?'Hide':'Show'}</button>
+        <button className='toggle' onClick={handleToggle}>{show?'Hide':'Show'}</button>
         {
             show && tasks.map((task)=> (
                <Task task={task}  handleDelete={handleDelete} a={a} />
