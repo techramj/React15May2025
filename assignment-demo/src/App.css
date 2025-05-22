@@ -1,0 +1,107 @@
+h1{
+  font-size: 40px;
+  color: blue;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+h3{
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.a {
+  width: 100px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+
+
+button.btn{
+  border: 0px;
+  border-radius: 5px;
+  background-color: green;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+ul{
+  max-width: 500px;
+  margin: 50 auto;
+  padding: 15px;
+  box-shadow: rgba(0,0,0,0.05)  0px 2px 4px, rgba(28,31,36,.15) 0px 0px 0px 1px;
+  align-items: center;
+}
+
+li{
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0,0,0,0.05)  0px 2px 4px;
+  margin: 20px 5px;
+}
+
+li.completed {
+  box-shadow: rgb(65,160,0) 0px 1px 5px;
+}
+
+li.pending {
+  box-shadow: rgb(160, 64, 0) 0px 1px 5px;
+}
+
+button.toggle{
+  border: 0px;
+  border-radius: 5px;
+  background-color: #0f101a;
+  color: #ffffff;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.box {
+  width: 800px;
+  padding: 20px 5px;
+  margin: 20px auto;
+  box-shadow: rgb(0,0,0,0.5)  0px 2px 4px;
+  border-radius: 5px;
+  border: 0px;
+  align-items: center;
+}
+
+.box.success{
+  background-color: aquamarine;
+}
+
+.box.alert{
+  background-color: #ffcccb;
+}
+
+.box.warning{
+  background-color: rgb(227, 199, 170);
+}
+
+.box p{
+  margin: 10px;
+}
+
+.box p.description{
+  font-size:14px;
+}
+
+.box p.title{
+  font-size:20px;
+}
