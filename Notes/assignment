@@ -6,3 +6,37 @@ increment by 2
 decrement by 2
 
 create the function for each button and  call the function
+
+# Assignment 2
+- create four component in the folder button-banner folder
+```
+1. ButtonBanner
+2. Button
+3. Banner
+4. Message
+
+In ButtonBanner call the other 3 component
+<Banner>
+<Button>
+<Message>
+
+In the App.js call ButtonBanner
+```
+
+Button.js
+```
+<button>clicke here</button>
+```
+
+Banner.js
+```
+Button clicked n times
+```
+
+Message.js
+```
+if count<10  then display , you are not eligible for any button.
+if count>=10 and <20 , eligible for the silver button. bgColor = silver
+if count>=20 and <30 , eligible for the golden button, bgColor = golden
+if count>30 then , eligible for the plaltinum button.
+```
