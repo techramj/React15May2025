@@ -1,0 +1,19 @@
+.task{
+    font: 16px;
+    list-style: none;
+    margin: 20px 5 px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.915) 0xp 1px 5px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.task li.completed {
+    box-shadow: rgb(65,160,0) 0px 1px 5px;
+  }
+  
+.task li.pending {
+    box-shadow: rgb(160, 64, 0) 0px 1px 5px;
+  }
