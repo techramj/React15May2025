@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <h1>Header</h1>
         <p>© 2023 Style Demo. All rights reserved.</p>
         <p>Follow us on 
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"> Twitter</a> and 
