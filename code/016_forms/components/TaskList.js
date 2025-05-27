@@ -2,8 +2,12 @@ import React, { useState } from 'react'
 import Task from './Task';
 import './TaskList.css';
 
-const TaskList = ({tasks, setTasks}) => {
-  
+const TaskList = () => {
+  const[tasks, setTasks] = useState([
+    {id:101, name:'React Js', completed:true},
+        {id:102, name:'Angular Js', completed:true},
+        {id:103, name:'Java', completed:false}
+  ]);
 
   const[show, setShow] = useState(true);
 
