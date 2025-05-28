@@ -4,7 +4,7 @@ import './AddTask.css';
 
 const AddTask = ({tasks, setTasks}) => {
     //const [taskValue, setTaskValue] = useState(''); //initial value of task input
-    const [status, setStatus] = useState(false);
+    //const [status, setStatus] = useState(false);
 
     const taskRef = useRef('');
     const statusRef = useRef(false);
@@ -38,8 +38,7 @@ const AddTask = ({tasks, setTasks}) => {
         let completed = Boolean(statusRef.current.value);
         const task = {id:id, name:taskName, completed:completed};
         console.log(task);
-
-        
+        setTasks([ task,...tasks]); //update the tasks state with the new task
         handleReset();
     }
 
