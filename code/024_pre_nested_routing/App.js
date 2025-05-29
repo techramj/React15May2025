@@ -24,22 +24,13 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="products" element={<ProductList />} />
               <Route path="products/:id" element={<ProductDetails />} />
+
+              <Route path="contact" element={<Contact />} />
+              <Route path="contact/in" element={<ContactIn />} />
+              <Route path="contact/us" element={<ContactUs />} />
+              <Route path="contact/uk" element={<ContactUk />} />
+              <Route path="contact/*" element={<ContactGlobal />} />
               
-              {/* <Route path="contact/" element={<Contact />} >
-                <Route path="in" element={<ContactIn />} />
-                <Route path="us" element={<ContactUs />} />
-                <Route path="uk" element={<ContactUk />} />
-                <Route path="*" element={<ContactGlobal />} />
-              </Route> */}
-
-              <Route path="contact">
-                <Route index element={<Contact />} />
-                <Route path="in" element={<ContactIn />} />
-                <Route path="us" element={<ContactUs />} />
-                <Route path="uk" element={<ContactUk />} />
-                <Route path="*" element={<ContactGlobal />} />
-              </Route>
-
               <Route path="admin" element= {user ==='admin'?<Admin />: <Navigate to="/" />}/>
               <Route path = "*" element= {<Page />}  />
             </Routes>
