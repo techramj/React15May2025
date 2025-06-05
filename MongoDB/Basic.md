@@ -31,4 +31,23 @@ db.createCollection('emp');
 ## drop database
 ```
 db.dropDatabse()
-``
+```
+
+
+# Collection (Table)
+## crate collectdion
+```
+db.createCollection('<collection_name>')
+```
+
+## display list of collection
+```
+show collections
+```
+
+## drop collection
+```
+db.<collection_name>.drop();
+```
+
+
