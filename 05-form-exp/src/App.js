@@ -7,11 +7,14 @@ import AddTask from './components/AddTask';
 import { useState } from 'react';
 
 function App() {
-  const[tasks, setTasks] = useState([
-      {id:101, name:'React Js', completed:true},
-          {id:102, name:'Angular Js', completed:true},
-          {id:103, name:'Java', completed:false}
-    ]);
+   
+  // const[tasks, setTasks] = useState([
+  //     {id:101, name:'React Js', completed:true},
+  //         {id:102, name:'Angular Js', completed:true},
+  //         {id:103, name:'Java', completed:false}
+  //   ]);
+
+  const [tasks, setTasks] = useState(() => JSON.parse(localStorage.getItem("tasklist")) || []);
 
   return (
     <div className="App">
@@ -26,3 +29,5 @@ function App() {
 }
 
 export default App;
+
+

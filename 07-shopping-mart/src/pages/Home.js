@@ -1,8 +1,9 @@
 import React from 'react'
 import {ProductCard} from '../components';
+import { useTitle } from '../hooks/useTitle';
 
 export const Home = () => {
-    
+  useTitle("Home");
    const products = [
     {id: 1, name: 'Apple pro Headphone', price: 200, image: '/images/1001.webp'},
     {id: 2, name: 'Beat 001H Bluetooth Headphone', price: 50, image: '/images/1002.webp'},
@@ -14,7 +15,7 @@ export const Home = () => {
 
   return (
     <main>
-      <section className='products'>
+      <section className='products  '>
          {products.map((product) => (
           <ProductCard key={product.id} product={product} />  
          ))}

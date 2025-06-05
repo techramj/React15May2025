@@ -38,7 +38,9 @@ const AddTask = ({tasks, setTasks}) => {
         let completed = Boolean(statusRef.current.value);
         const task = {id:id, name:taskName, completed:completed};
         console.log(task);
-        setTasks([ task,...tasks]); //update the tasks state with the new task
+        let updatedTaskList = [ task,...tasks]; //create a new array with the new task at the beginning
+        localStorage.setItem("tasklist", JSON.stringify(updatedTaskList)); //save the updated task list to local storage
+        setTasks(updatedTaskList); //update the tasks state with the new task
         handleReset();
     }
 
