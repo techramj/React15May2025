@@ -60,3 +60,13 @@ id  name salary
 
  {id:1, name:'Jack', salary:5000}
 ```
+
+# Analogies
+```
+SQL                 MongoDB
+Database            Database
+Table               Collection
+Row                 DOcument
+Column              field
+
+```
