@@ -15,17 +15,48 @@ m2              2
 m3              1
 m4              1
 
+# NoSQL
+- Not only sql or non-relation database
 
-id:1, name:jack, salary:5000, mobiles:[m1,m3,m4]
-id:2, name:sam, salary:3000, mobiles[m1]
 
-EF CODD
-12 => 7th 
+# characterstic of NOSQL
+1. schema free
 
-tab1
-id
-1
-1
-1
+```
+id name salary  email
+1  raj  1000    raj@test.com
+2  Sam
+3        5000
 
-20 tables
+```
+
+## Type of NoSQL DB
+### 1. Key-value stores
+- Redis
+- Oracle BDB
+- Voldemort
+
+### 2. Column family store
+- Cassandra
+
+### 3. Graph
+- Neo4j, Hypergrap
+
+### Document base
+- MongoDB
+- Couchbase
+
+
+# relational
+- row and column
+```
+id  name salary
+
+```
+
+# NoSQL/MongoDB
+```
+ {"id":1, "name":"Jack", "salary":5000}
+
+ {id:1, name:'Jack', salary:5000}
+```
