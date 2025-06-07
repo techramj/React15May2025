@@ -36,3 +36,15 @@ eg:
 mongosh seed /Users/../../15May2025/MongoDB/script.js
 ```
 
+
+## import json
+- step 1: download json-tool
+- step 2: unzip the zip file in the program-files/mongodb/../../../bin
+- cd path_of json_file
+- execute the below command
+```
+mongoimport json-file_name -d <database_name> -c <collection-name> --jsonArray
+eg:
+mongoimport movie.json -d seed -c movie --jsonArray
+```
+
