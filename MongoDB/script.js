@@ -31,3 +31,67 @@ db.emp.insertMany([
     {id: 29, name: "Cathy", age: 23, department: "Operations"},
     {id: 30, name: "Derek", age: 31, department: "Customer Service"}
 ]);
+
+//one to one mapping
+// In this example, we will create a one-to-one relationship between employees and their passports.
+db.emp.insertOne({_id:1, name:'sam', salary:1000});
+db.passport.insertOne({pass_id:1001, passport_num:'AOBcD00123', emp_id:1});
+
+// To establish the one-to-one relationship, we can embed the passport information within the employee document.
+db.emp.insertOne({_id:1, name:'sam', salary:1000,
+    passport:{
+        pass_id:1001, passport_num:'AOBcD00123'
+    }
+});
+
+// when we have strong one to one relationship, then we can embed the document
+// If the relationship is not strong, we can use references instead.
+
+
+// one to many mapping
+// question and answers
+// approach 1: Embedding answers within the question document
+db.question.insertOne({_id:1, question:'What is MongoDB?', answers:[
+    {answer_id:1, answer_text:'MongoDB is a NoSQL database'},
+    {answer_id:2, answer_text:'MongoDB stores data in JSON-like documents'}
+]});
+// In this case, we have a one-to-many relationship where one question can have multiple answers.
+
+// approach 2: Using a separate collection for answers and referencing the question
+db.question.insertOne({_id:1, question:'What is MongoDB?'});
+db.answer.insertMany([
+    {answer_id:1, answer_text:'MongoDB is a NoSQL database', question_id:1},
+    {answer_id:2, answer_text:'MongoDB stores data in JSON-like documents', question_id:1}
+]);
+// In this case, we have a one-to-many relationship where one question can have multiple answers.
+
+//approach 3: 
+db.answers.insertMany([
+    {answer_id:1, answer_text:'MongoDB is a NoSQL database'},
+    {answer_id:2, answer_text:'MongoDB stores data in JSON-like documents'}
+]);
+db.question.insertOne({_id:1, question:'What is MongoDB?', answers:[1,2]});
+
+//rule:  maximum size of document is 16MB
+// depth of document is 100 levels
+a:{
+    b:{
+        c:{
+            d:{
+                e:{
+                    f:{
+                        g:{
+                            h:{
+                                i:{
+                                    j:{
+                                        k:{}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

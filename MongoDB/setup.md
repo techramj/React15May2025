@@ -39,7 +39,7 @@ mongosh seed /Users/../../15May2025/MongoDB/script.js
 
 ## import json
 - step 1: download json-tool
-- step 2: unzip the zip file in the program-files/mongodb/../../../bin
+- step 2: unzip the zip file and copy the jar or executable file in  program-files/mongodb/../../../bin folder
 - cd path_of json_file
 - execute the below command
 ```
